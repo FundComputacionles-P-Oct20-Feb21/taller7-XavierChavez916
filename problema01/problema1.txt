@@ -1,0 +1,22 @@
+
+
+
+Generar e imprimir la siguiente serie:
+-1/1+1/2-1/3+1/4-1/5+1/6-1/7+1/8-1/9+1/10
+
+1. Inicio
+
+2. contador, i[0,n] <--1
+3. cadena_final, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}]
+4. cadena_final <-- ""
+
+5. Mientras (contador <= 10) entonces
+6. 	Si (contador MOD 2) == 0 entonces 
+7.	cadena_final <-- cadena_final + "+1" + "/" + contador "\n"
+8. 	De lo contrario
+9.	cadena_final <-- cadena_final + "-1" + "/" + contador "\n"
+10. Fin si
+11. Contador <-- contador + 1
+12. Fin mientras
+13. Escribir cadena_final
+14. Fin
