@@ -47,6 +47,6 @@ Promedio de edades: 26.8 Promedio de estaturas: 1.87
 29.	promedio2 <-- suma2 / contador
 30. 	
 31.	Fin Haga_Hasta (bandera)
-32.	Escribir cadena_final + "Promedio de edades: " + promedio + "Promedio de estaturas" + promedio2 
+32.	Escribir cadena_final + "Promedio de edades: " + promedio + "Promedio de estaturas: " + promedio2 
 33. Fin
  	
