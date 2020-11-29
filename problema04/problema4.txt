@@ -56,9 +56,9 @@ Promedio de edades: 26.8 Promedio de estaturas: 1.87
 
 34.	promedio_edad <-- suma / contador
 35.	promedio_estatura <-- suma2 / contador
-36.	cadena_final <-- cadena_final + "Promedio de edades: " + promedio_edad
-37.	cadena_final <-- cadena_final + "Promedio de estaturas: "+ promedio_estatura
-38. 	
-39.	Escribir cadena_final
-40. Fin
+36.	cadena_final <-- cadena_final + "Promedio de edades: " + promedio_edad + "\n"
+37.	cadena_final <-- cadena_final + "Promedio de estaturas: "+ promedio_estatura + "\n"
+ 	
+38.	Escribir cadena_final
+39. Fin
  	
