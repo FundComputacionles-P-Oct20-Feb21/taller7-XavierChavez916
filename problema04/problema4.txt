@@ -22,31 +22,43 @@ Promedio de edades: 26.8 Promedio de estaturas: 1.87
 4. edad, i[0,n]
 5. estatura, d[0,n]
 6. cadena_final, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}]
-7. contador, i[0,n]<--1
-8. salida, i[0,n]
-9. bandera, boolean <-- true
-10. Haga_Hasta
-11. 	Escribir "Ingresar el nombre del jugador"
-12.	Leer jugador
-13.	Escribir "Ingresar la posición del jugador"
-14.	Leer posición
-15.	Escribir "Ingrese la edad del jugador"
-16. 	Leer edad
-17.	Escribir "Ingrese la estatura del jugador"
-18.	Leer estatura
-19.	suma <-- suma + edades
-20.	suma2 <-- suma2 + estatura 
-21.	cadena_final <-- cadena_final + jugador + " -" + posición + "-, "+ "edad " + edad ", "+ "estatura" + estatura "\n"
-22.	Escribir "Si desea salir del ciclo dimite un numero menor o igual a 10"
-23.	Leer salida
-24.	contador <-- contador + 1
-25.		Si(salida <= 10) entonces
-26.		badera = false
-27.	Fin si
-28.	promedio <-- suma / contador
-29.	promedio2 <-- suma2 / contador
-30. 	
-31.	Fin Haga_Hasta (bandera)
-32.	Escribir cadena_final + "Promedio de edades: " + promedio + "Promedio de estaturas: " + promedio2 
-33. Fin
+7. contador, i[0,n]<--0
+8. salida, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}]
+9. suma_edades, i[0,n]<--0
+10. suma_estaturas, d[0,n]<--0.0
+11. bandera, boolean <-- true
+12. promedio_edad, d[0,n]
+13. promedio_estatura, d[0,n]
+
+14. Haga_Hasta
+15. 	Escribir "Ingresar el nombre del jugador"
+16.	Leer jugador
+17.	Escribir "Ingresar la posición del jugador"
+18.	Leer posición
+19.	Escribir "Ingrese la edad del jugador"
+20. 	Leer edad
+21.	Escribir "Ingrese la estatura del jugador"
+22.	Leer estatura
+
+23.	suma <-- suma + edad
+24.	suma2 <-- suma2 + estatura 
+25.	contador <-- contador + 1
+
+26.	cadena_final <-- cadena_final + jugador + " -" + posición + "-, "+ "edad " + edad ", "+ "estatura" + estatura "\n"
+27.	Escribir "Si desea salir del ciclo dimite un numero menor o igual a 10"
+28.	Leer salida
+29.	
+30.		Si(salida == si) entonces
+31.			bandera = false
+32.		Fin si
+
+33.Fin Haga_Hasta (bandera)
+
+34.	promedio_edad <-- suma / contador
+35.	promedio_estatura <-- suma2 / contador
+36.	cadena_final <-- cadena_final + "Promedio de edades: " + promedio_edad
+37.	cadena_final <-- cadena_final + "Promedio de estaturas: "+ promedio_estatura
+38. 	
+39.	Escribir cadena_final
+40. Fin
  	
